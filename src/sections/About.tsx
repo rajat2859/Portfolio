@@ -27,7 +27,7 @@ export default function About() {
                 {PERSONAL_INFO.education.map((edu, idx) => (
                   <div key={idx} className="rounded-xl border border-slate-200 bg-slate-50/40 p-4">
                     <p className="font-mono text-[9px] font-bold text-slate-400 uppercase tracking-widest">{edu.duration}</p>
-                    <h4 className="font-sans text-sm font-bold text-slate-930 mt-1">{edu.degree}</h4>
+                    <h4 className="font-sans text-sm font-bold text-slate-900 mt-1">{edu.degree}</h4>
                     <p className="font-sans text-xs text-slate-500 font-medium">{edu.institution}</p>
                   </div>
                 ))}
@@ -58,7 +58,7 @@ export default function About() {
 
             <div className="mt-8 relative border-l border-slate-200 pl-6 ml-1 space-y-8">
               {EXPERIENCES.map((exp) => (
-                <div key={exp.id} className="relative group -ml-4 p-5 rounded-2xl hover:bg-slate-50/70 border border-transparent hover:border-slate-150 transition-all duration-150">
+                <div key={exp.id} className="relative group -ml-4 p-5 rounded-2xl hover:bg-slate-50/70 border border-transparent hover:border-slate-200 transition-all duration-150">
                   <div className="absolute -left-[18px] top-7 flex h-4 w-4 items-center justify-center rounded-full border border-slate-300 bg-white group-hover:border-indigo-600 group-hover:bg-indigo-600 transition-all duration-150 shadow-xs">
                     <div className="h-1.5 w-1.5 rounded-full bg-slate-400 group-hover:bg-white transition-colors" />
                   </div>

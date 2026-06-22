@@ -34,14 +34,14 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
     borderStyle = "border-slate-800";
     buttonStyle = "border-slate-800 bg-slate-800 text-white hover:bg-slate-750";
   } else if (isLightGray) {
-    cardStyle = "bg-slate-150 border border-slate-205 text-slate-800 p-8 flex flex-col justify-between";
+    cardStyle = "bg-slate-100 border border-slate-200 text-slate-800 p-8 flex flex-col justify-between";
     badgeStyle = "bg-slate-900 text-white font-extrabold";
     titleStyle = "text-xl font-extrabold font-display text-slate-900";
     descStyle = "text-sm text-slate-500 mt-2 line-clamp-3 leading-relaxed";
     borderStyle = "border-slate-200/60";
     buttonStyle = "border-slate-300 bg-slate-50 text-slate-800 hover:bg-slate-100";
   } else {
-    cardStyle = "bg-white border border-slate-205 text-slate-800 p-8 flex flex-col justify-between";
+    cardStyle = "bg-white border border-slate-200 text-slate-800 p-8 flex flex-col justify-between";
     badgeStyle = "bg-indigo-600 text-white font-extrabold";
     titleStyle = "text-xl font-extrabold font-display text-slate-900";
     descStyle = "text-sm text-slate-500 mt-2 line-clamp-3 leading-relaxed";
@@ -96,11 +96,11 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
         {/* Dynamic Architect Metrics for Greater Visual Polish */}
         {project.id === "project-1" && (
           <div className="grid grid-cols-2 gap-3 mt-4">
-            <div className={`p-2.5 rounded-lg border ${isDark ? "bg-slate-850 border-slate-800" : "bg-white border-slate-200/80 shadow-xs"}`}>
+            <div className={`p-2.5 rounded-lg border ${isDark ? "bg-slate-800 border-slate-700" : "bg-white border-slate-200/80 shadow-xs"}`}>
               <div className="font-mono text-[8px] uppercase tracking-wider text-slate-400">Response Offset</div>
               <div className={`text-sm font-black font-display mt-0.5 ${isDark ? "text-indigo-400" : "text-indigo-600"}`}>42ms Latency</div>
             </div>
-            <div className={`p-2.5 rounded-lg border ${isDark ? "bg-slate-850 border-slate-800" : "bg-white border-slate-200/80 shadow-xs"}`}>
+            <div className={`p-2.5 rounded-lg border ${isDark ? "bg-slate-800 border-slate-700" : "bg-white border-slate-200/80 shadow-xs"}`}>
               <div className="font-mono text-[8px] uppercase tracking-wider text-slate-400">Cache Efficacy</div>
               <div className="text-sm font-black font-display mt-0.5 text-emerald-500">92% Hitrate</div>
             </div>
@@ -109,11 +109,11 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
 
         {project.id === "project-2" && (
           <div className="grid grid-cols-2 gap-3 mt-4">
-            <div className={`p-2.5 rounded-lg border ${isDark ? "bg-slate-850 border-slate-800" : "bg-white border-slate-200/80 shadow-xs"}`}>
+            <div className={`p-2.5 rounded-lg border ${isDark ? "bg-slate-800 border-slate-700" : "bg-white border-slate-200/80 shadow-xs"}`}>
               <div className="font-mono text-[8px] uppercase tracking-wider text-slate-400">Core Web Vitals</div>
               <div className={`text-sm font-black font-display mt-0.5 ${isDark ? "text-indigo-400" : "text-indigo-600"}`}>99 / 100 Score</div>
             </div>
-            <div className={`p-2.5 rounded-lg border ${isDark ? "bg-slate-850 border-slate-800" : "bg-white border-slate-200/80 shadow-xs"}`}>
+            <div className={`p-2.5 rounded-lg border ${isDark ? "bg-slate-800 border-slate-700" : "bg-white border-slate-200/80 shadow-xs"}`}>
               <div className="font-mono text-[8px] uppercase tracking-wider text-slate-400">Organic Traffic Boost</div>
               <div className="text-sm font-black font-display mt-0.5 text-emerald-500">+40.2% Gain</div>
             </div>
@@ -122,11 +122,11 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
 
         {project.id === "project-3" && (
           <div className="grid grid-cols-2 gap-3 mt-4">
-            <div className={`p-2.5 rounded-lg border ${isDark ? "bg-slate-850 border-slate-800" : "bg-white border-slate-200/80 shadow-xs"}`}>
+            <div className={`p-2.5 rounded-lg border ${isDark ? "bg-slate-800 border-slate-700" : "bg-white border-slate-200/80 shadow-xs"}`}>
               <div className="font-mono text-[8px] uppercase tracking-wider text-slate-400">Trigger Reliability</div>
               <div className="text-sm font-black font-display mt-0.5 text-emerald-500">99.99% Uptime</div>
             </div>
-            <div className={`p-2.5 rounded-lg border ${isDark ? "bg-slate-850 border-slate-800" : "bg-white border-slate-200/80 shadow-xs"}`}>
+            <div className={`p-2.5 rounded-lg border ${isDark ? "bg-slate-800 border-slate-700" : "bg-white border-slate-200/80 shadow-xs"}`}>
               <div className="font-mono text-[8px] uppercase tracking-wider text-slate-400">Data Synchronization</div>
               <div className="text-sm font-black font-display mt-0.5 text-slate-700">12.5k Actions/Day</div>
             </div>
@@ -158,8 +158,8 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
               style={{ overflow: "hidden" }}
               className={`mt-4 rounded-lg border p-4 ${
                 isDark 
-                  ? "bg-slate-850 border-slate-800" 
-                  : "bg-slate-50/50 border-slate-150"
+                  ? "bg-slate-800 border-slate-700" 
+                  : "bg-slate-50/50 border-slate-200"
               }`}
             >
               <div className={`flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider font-display mb-3 ${
@@ -187,7 +187,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
               target="_blank"
               rel="noopener noreferrer"
               className={`inline-flex items-center gap-1.5 font-sans text-xs font-bold transition-colors ${
-                isDark ? "text-slate-200 hover:text-white" : "text-slate-750 hover:text-slate-950"
+                isDark ? "text-slate-200 hover:text-white" : "text-slate-700 hover:text-slate-900"
               }`}
             >
               <Github className="h-4 w-4" /> Code Source
@@ -202,7 +202,7 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
               target="_blank"
               rel="noopener noreferrer"
               className={`inline-flex items-center gap-1 font-mono text-xs font-bold hover:underline ${
-                isDark ? "text-indigo-400 hover:text-indigo-300" : "text-indigo-600 hover:text-indigo-750"
+                isDark ? "text-indigo-400 hover:text-indigo-300" : "text-indigo-600 hover:text-indigo-700"
               }`}
             >
               Demo Hub <ArrowUpRight className="h-3 w-3" />

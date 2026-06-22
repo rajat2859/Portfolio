@@ -10,7 +10,7 @@ export default function Skills() {
   ];
 
   const accentIcons = [
-    "text-indigo-650",
+    "text-indigo-600",
     "text-slate-800",
     "text-emerald-500",
     "text-sky-500",
@@ -36,9 +36,9 @@ export default function Skills() {
             return (
               <div
                 key={idx}
-                className={`rounded-xl border border-slate-200 border-t-3 ${borderTheme} bg-white p-6 shadow-xs transition-all duration-300 hover:shadow-xs hover:border-slate-350`}
+                className={`rounded-xl border border-slate-200 border-t-4 ${borderTheme} bg-white p-6 shadow-xs transition-all duration-300 hover:shadow-xs hover:border-slate-400`}
               >
-                <h3 className="font-display text-xs font-extrabold uppercase tracking-widest text-slate-905 pb-3 border-b border-slate-100">
+                <h3 className="font-display text-xs font-extrabold uppercase tracking-widest text-slate-900 pb-3 border-b border-slate-100">
                   {category.title}
                 </h3>
                 
@@ -46,7 +46,7 @@ export default function Skills() {
                   {category.skills.map((skill) => (
                     <li key={skill} className="flex items-center gap-2.5">
                       <CheckCircle className={`h-4 w-4 shrink-0 ${iconTheme}`} />
-                      <span className="font-sans text-xs font-semibold text-slate-750">{skill}</span>
+                      <span className="font-sans text-xs font-semibold text-slate-700">{skill}</span>
                     </li>
                   ))}
                 </ul>

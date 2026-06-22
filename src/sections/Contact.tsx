@@ -47,7 +47,7 @@ export default function Contact() {
               <h2 className="mt-2 font-display text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl">
                 Let's Discuss Your Project
               </h2>
-              <p className="mt-4 text-slate-550 leading-relaxed text-sm font-medium">
+              <p className="mt-4 text-slate-500 leading-relaxed text-sm font-medium">
                 If you have a website, optimization strategy, custom automation requirement, or contract opening, let me know. I'll get back to you within 24 business hours.
               </p>
             </div>
@@ -93,7 +93,7 @@ export default function Contact() {
             {/* Micro Stats Card inspired by metrics section of template */}
             <div className="p-6 rounded-xl border border-slate-200 bg-slate-50/30">
               <div className="flex items-center gap-2 font-display text-xs font-bold uppercase tracking-widest text-slate-900 mb-2">
-                <Sparkles className="h-4 w-4 text-indigo-505" />
+                <Sparkles className="h-4 w-4 text-indigo-500" />
                 <span>Immediate Availability</span>
               </div>
               <p className="text-xs text-slate-500 font-medium leading-relaxed">
@@ -132,7 +132,7 @@ export default function Contact() {
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
                   {error && (
-                    <div className="rounded-lg border border-rose-220 bg-rose-50 p-3 text-xs font-semibold text-rose-800">
+                    <div className="rounded-lg border border-rose-200 bg-rose-50 p-3 text-xs font-semibold text-rose-800">
                       {error}
                     </div>
                   )}
@@ -149,7 +149,7 @@ export default function Contact() {
                         required
                         value={formData.name}
                         onChange={handleChange}
-                        className="mt-1.5 w-full rounded-lg border border-slate-205 bg-white px-4 py-3 text-sm text-slate-905 outline-none transition-all focus:border-indigo-600 focus:ring-1 focus:ring-indigo-600 placeholder:text-slate-400"
+                        className="mt-1.5 w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition-all focus:border-indigo-600 focus:ring-1 focus:ring-indigo-600 placeholder:text-slate-400"
                         placeholder="John Doe"
                       />
                     </div>
@@ -165,7 +165,7 @@ export default function Contact() {
                         required
                         value={formData.email}
                         onChange={handleChange}
-                        className="mt-1.5 w-full rounded-lg border border-slate-205 bg-white px-4 py-3 text-sm text-slate-905 outline-none transition-all focus:border-indigo-600 focus:ring-1 focus:ring-indigo-600 placeholder:text-slate-400"
+                        className="mt-1.5 w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition-all focus:border-indigo-600 focus:ring-1 focus:ring-indigo-600 placeholder:text-slate-400"
                         placeholder="johndoe@example.com"
                       />
                     </div>
@@ -181,7 +181,7 @@ export default function Contact() {
                       id="subject"
                       value={formData.subject}
                       onChange={handleChange}
-                      className="mt-1.5 w-full rounded-lg border border-slate-205 bg-white px-4 py-3 text-sm text-slate-905 outline-none transition-all focus:border-indigo-600 focus:ring-1 focus:ring-indigo-600 placeholder:text-slate-400"
+                      className="mt-1.5 w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition-all focus:border-indigo-600 focus:ring-1 focus:ring-indigo-600 placeholder:text-slate-400"
                       placeholder="Discussing React or Custom Script..."
                     />
                   </div>
@@ -197,7 +197,7 @@ export default function Contact() {
                       required
                       value={formData.message}
                       onChange={handleChange}
-                      className="mt-1.5 w-full rounded-lg border border-slate-205 bg-white px-4 py-3 text-sm text-slate-905 outline-none transition-all focus:border-indigo-600 focus:ring-1 focus:ring-indigo-600 resize-none placeholder:text-slate-400 text-slate-900"
+                      className="mt-1.5 w-full rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition-all focus:border-indigo-600 focus:ring-1 focus:ring-indigo-600 resize-none placeholder:text-slate-400 text-slate-900"
                       placeholder="Write your brief description or target specifications here..."
                     />
                   </div>
@@ -205,7 +205,7 @@ export default function Contact() {
                   <button
                     type="submit"
                     disabled={isSubmitting}
-                    className="flex w-full items-center justify-center gap-2 rounded-lg bg-slate-900 py-3.5 text-xs font-bold uppercase tracking-wider text-white hover:bg-slate-800 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2 disabled:bg-slate-450 select-none cursor-pointer"
+                    className="flex w-full items-center justify-center gap-2 rounded-lg bg-slate-900 py-3.5 text-xs font-bold uppercase tracking-wider text-white hover:bg-slate-800 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-950 focus:ring-offset-2 disabled:opacity-50 select-none cursor-pointer"
                   >
                     {isSubmitting ? (
                       <span>Sending Message...</span>
